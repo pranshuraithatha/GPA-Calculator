@@ -15,11 +15,11 @@ class WelcomePage(tk.Tk):
         self.course_entry = tk.Entry(self)
         self.course_entry.pack(pady=10)
 
-        self.submit_button = tk.Button(self, text="Let's Go!", command=self.on_submit)
-        self.submit_button.pack()
-
         self.instructions_button = tk.Button(self, text="Instructions", command=self.show_instructions)
         self.instructions_button.pack()
+
+        self.submit_button = tk.Button(self, text="Let's Go!", command=self.on_submit)
+        self.submit_button.pack()
 
     def on_submit(self):
         try:
