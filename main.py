@@ -4,11 +4,11 @@ import json
 import os
 import webbrowser
 import tkinter.filedialog as filedialog
-import ChangeRowsPage.py
-import GPA_Calculator.py
-import InstructionsPage.py
-import QAPage.py
-import WelcomePage.py
+from ChangeRowsPage import ChangeRowsPage
+from GPA_Calculator import GPA_Calculator
+from InstructionsPage import InstructionsPage
+from QAPage import QAPage
+from WelcomePage import WelcomePage
 
 # Constants for grade values and quality points
 GRADE_VALUES = {"A": 4.0, "B": 3.0, "C": 2.0, "F": 0.0}
