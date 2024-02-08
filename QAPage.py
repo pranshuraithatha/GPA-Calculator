@@ -3,7 +3,7 @@ class QAPage(tk.Toplevel):
         super().__init__(parent)
         self.title("Q&A Page")
         self.geometry("400x200")
-        self.configure(background='lightgreen')
+        self.configure(background='medium slate blue')
 
         self.question_label = tk.Label(self, text="Select a Question:")
         self.question_label.pack()
