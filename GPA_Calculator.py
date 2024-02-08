@@ -5,7 +5,7 @@ class GPA_Calculator(tk.Tk):
         super().__init__()
         self.title("GPA Calculator")
         self.configure(background='lightblue')
-        messagebox.showerror("Dynamic Backup Feature", "You are going to name the dynamic backup file.")
+        messagebox.showerror("Dynamic Backup Feature", "You are going to name the backup file. The program is going to auto backup the file")
 
         self.course_count = course_count
         self.grades = []
@@ -30,7 +30,7 @@ class GPA_Calculator(tk.Tk):
         add_button.grid(row=17, column=0)
 
         q_and_a_button = tk.Button(self, text="Q&A", command=self.q_and_a)
-        q_and_a_button.grid(row=17, column=1)
+        q_and_a_button.grid(row=16, column=3)
 
         instructions_button = tk.Button(self, text="Instructions", command=self.show_instructions)
         instructions_button.grid(row=18, column=2)
@@ -57,7 +57,7 @@ class GPA_Calculator(tk.Tk):
         report_button.grid(row=18, column=0)
 
         auto_backup_button = tk.Button(self, text="Auto Backup", command=self.backup_data_silently)
-        auto_backup_button.grid(row=18, column=1)
+        auto_backup_button.grid(row=17, column=1)
 
         new_calculation_button = tk.Button(self, text="Open New File", command=self.new_calculation)
         new_calculation_button.grid(row=18, column=3)
@@ -194,7 +194,7 @@ class GPA_Calculator(tk.Tk):
         add_button.grid(row=17, column=0)
 
         q_and_a_button = tk.Button(self, text="Q&A", command=self.q_and_a)
-        q_and_a_button.grid(row=17, column=1)
+        q_and_a_button.grid(row=16, column=3)
 
         instructions_button = tk.Button(self, text="Instructions", command=self.show_instructions)
         instructions_button.grid(row=18, column=2)
@@ -352,7 +352,7 @@ class GPA_Calculator(tk.Tk):
         add_button.grid(row=17, column=0)
 
         q_and_a_button = tk.Button(self, text="Q&A", command=self.q_and_a)
-        q_and_a_button.grid(row=17, column=1)
+        q_and_a_button.grid(row=16, column=3)
 
         instructions_button = tk.Button(self, text="Instructions", command=self.show_instructions)
         instructions_button.grid(row=18, column=2)
