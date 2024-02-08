@@ -3,7 +3,7 @@ class InstructionsPage(tk.Toplevel):
         super().__init__(parent)
         self.title("Instructions")
         self.geometry("800x400")
-        self.configure(background='lightyellow')
+        self.configure(background='medium slate blue')
 
         instructions_text = """
             Welcome to the GPA Calculator!
